@@ -1,17 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="JP">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Testing</title>
+    <title>こんにちは世界</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+        * {
+            padding: 0 0;
+            margin: 0 0;
+            outline: none;
+            font-family: 'Noto Sans JP';
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 56px;
+        }
+
+        .t-b {
+            color: #4285F4;
+        }
+
+        .t-y {
+            color: #FBBC05;
+        }
+
+        .t-r {
+            color: #EA4335;
+        }
+
+        .t-g {
+            color: #34A853;
+        }
+
+        div {
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        input {
+            padding: 8px 20px;
+            box-sizing: border-box;
+            width: 40%;
+
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border: 1px solid rgb(200, 200, 200);
+            border-right: none;
+            color: rgb(80, 80, 80);
+            font-size: 16px;
+            transition: 200ms;
+        }
+
+        input:focus {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-shadow: 1px 1px 3px rgb(200, 200, 200);
+        }
+
+        input::placeholder {
+            color: rgb(160, 160, 160);
+        }
+
+        input:focus::placeholder {
+            color: transparent;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 8px 20px;
+            width: max-content;
+
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border: 1px solid #4285F4;
+            background: transparent;
+            color: #4285F4;
+            font-size: 16px;
+            transition: 200ms;
+        }
+
+        .btn:hover {
+            background: #edf4ff;
+        }
+
+        p {
+            color: rgb(80, 80, 80);
+            text-align: center;
+        }
+
+        a {
+            margin-left: 12px;
+            color: rgb(100, 100, 255);
+            text-decoration: none;
+        }
+
+        .btn-2 {
+            padding: 2px 5px;
+            margin: 0 10px;
+
+            border: 1px solid rgb(160, 160, 160);
+            background: transparent;
+        }
+
+        .btn-2 a {
+            margin: 0 0;
+            color: rgb(80, 80, 80);
+        }
+
+        .btn-2 a:hover {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            padding: 6px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            border-top: 1px solid rgb(150, 150, 150);
+            background: rgb(230, 230, 230);
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 0 10px;
+                box-sizing: border-box;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            input {
+                width: 70%;
+                font-size: 14px;
+            }
+
+            .btn {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            a {
+                margin-left: 12px;
+                color: rgb(100, 100, 255);
+                text-decoration: none;
+            }
+
+            .btn-2 {
+                margin: 0 8px;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" href="https://img.icons8.com/color/2x/google-logo.png" type="image/x-icon">
 </head>
 
 <body>
-    <h1>Hello, <span style="color: lime;">World</span>!</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, assumenda.</p>
-    <a href="https://github.com/aryadewata">arya dewata</a>
+    <h1>
+        <span class="t-b">こ</span><span class="t-y">ん</span><span class="t-r">に</span><span class="t-b">ち</span><span
+            class="t-g">は</span><span class="t-r">世</span><span class="t-y">界</span>
+    </h1>
+    <div>
+        <input type="text" title="クリックして入力" placeholder="何かを入力">
+        <button class="btn" title="クリックして検索">探す</button>
+    </div>
+    <div>
+        <button class="btn-2"><a href="#">こんにちは世界探す</a></button>
+        <button class="btn-2"><a href="https://aryadewata.github.io/game">私はラッキーです</a></button>
+    </div>
+    <p>こんにちは世界 は 2 か国語で利用できます: <a href="#" title="言語を日本語に変更">日本語</a> <a href="#" title="言語を英語に変更">英語</a></p>
+    <footer>
+        <p>&copy; 2022. こんにちは世界. 全著作権所有.</p>
+    </footer>
 </body>
 
 </html>
