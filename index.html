@@ -95,6 +95,7 @@
             transition: 200ms;
         }
 
+        .btn:focus,
         .btn:hover {
             background: #edf4ff;
         }
@@ -191,6 +192,14 @@
     <footer>
         <p>&copy; 2022. こんにちは世界. 全著作権所有.</p>
     </footer>
+
+    <script>
+        document.querySelector('.btn').addEventListener('click', function () {
+            let input = document.querySelector('input').value.split(' ').join('+');
+            let url = `https://www.google.com/search?q=${input}&oq=${input}`;
+            input !== '' ? window.location.href = url : null;
+        })
+    </script>
 </body>
 
 </html>
