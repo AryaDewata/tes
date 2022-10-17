@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&di   splay=swap');
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(230, 230, 230);
+}
+form {
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 30%;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid rgb(180, 180, 180);
+    box-shadow: 1px 2px 3px rgb(180, 180, 180);
+}
+h1 {
+    margin: 20px 0 0 -2px;
+    padding: 5px 15px;
+    font-size: 28px;
+    color: #B73E3E;
+    font-family: 'Open Sans';
+    border-left: 4px solid #B73E3E;
+}
+input {
+    padding: 0 0 6px;
+    margin: 30px auto 0;
+    display: block;
+    width: 70% ;
+
+    border: none;
+    border-bottom: 1px solid rgb(140, 140, 140);
+    outline: none;
+
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: rgb(30, 30, 30);
+    letter-spacing: 1px;
+
+    transition: 1000ms;
+}
+input::placeholder {
+    letter-spacing: 2px;
+    color: rgb(160, 160, 160);
+}
+input:focus {
+    border-bottom: 1px solid #d16d6d;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+button {
+    cursor: pointer;
+    display: block;
+    padding: 10px 50px;
+    margin: 40px auto 0;
+
+    outline: none;
+    border: 1px solid #d16d6d;
+    background: transparent;
+    color: #d16d6d;
+
+    transition: 1000ms;
+}
+button:hover, button:active, button:focus {
+    color: #833232;
+    border: 1px solid #833232;
+    background: #f5baba;
+}
+p {
+    margin: 50px 0 0;
+
+    text-align: center;
+    font-family: 'Open Sans';
+    color: rgb(70, 70, 70);
+}
+a {
+    color: #B73E3E;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px){
+    form {
+        padding: 10px 0 20px;
+        width: 80%;
+    }
+    h1 {
+        margin: 20px 0 0 -1px;
+        font-size: 22px;
+        border-left: 2px solid #B73E3E;
+    }
+    input {
+        margin: 35px auto 0;
+        width: 85%;
+    
+        font-size: 16px;
+        font-weight: 300 !important;
+    }
+    input::placeholder {
+        letter-spacing: 1px;
+    }
+    button {
+        margin: 35px auto 0;
+    }
+    p {
+        margin: 40px 0 0;
+    }
+}
