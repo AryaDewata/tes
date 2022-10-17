@@ -36,7 +36,7 @@ input {
     width: 70% ;
 
     border: none;
-    border-bottom: 1px solid rgb(140, 140, 140);
+    border-bottom: 2px solid rgb(140, 140, 140);
     outline: none;
 
     font-family: 'Open Sans';
@@ -51,7 +51,7 @@ input::placeholder {
     color: rgb(160, 160, 160);
 }
 input:focus {
-    border-bottom: 1px solid #d16d6d;
+    border-bottom: 2px solid #d16d6d;
 }
 input:focus::placeholder {
     color: transparent;
@@ -64,6 +64,7 @@ button {
 
     outline: none;
     border: 1px solid #d16d6d;
+    border-radius: 3px;
     background: transparent;
     color: #d16d6d;
 
@@ -78,6 +79,7 @@ p {
     margin: 50px 0 0;
 
     text-align: center;
+    font-size: 14px;
     font-family: 'Open Sans';
     color: rgb(70, 70, 70);
 }
@@ -114,5 +116,6 @@ a:hover {
     }
     p {
         margin: 40px 0 0;
+        font-size: 12px;
     }
 }
