@@ -1,122 +1,206 @@
+/* Import font dari google font */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&di   splay=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+/* 
+<=== Style untuk Body dan Container ===>
+*/
 * {
     margin: 0 0;
     padding: 0 0;
+    outline: none;
 }
 body {
-    height: 100vh;
     overflow: hidden;
+
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgb(230, 230, 230);
+
+    background: linear-gradient(160deg, rgb(29, 29, 163, 0.8) 35%, rgb(17, 194, 230, 0.8) 100%);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat; */
+    background-size: cover;
+    font-family: 'Nunito';
 }
-form {
+.container {
     padding: 20px 0;
     margin: 0 auto;
     width: 30%;
+
     background: white;
-    border-radius: 5px;
-    border: 1px solid rgb(180, 180, 180);
-    /* box-shadow: 1px 2px 3px rgb(180, 180, 180), black 5px -5px; */
-    box-shadow: white 5px -6px, 6px -7px rgb(180, 180, 180), 7px -8px 3px rgb(180, 180, 180);
+    border-radius: 10px;
+    /* box-shadow: 1px 2px 5px rgb(40, 40, 40), -1px -1px 5px rgb(40, 40, 40); */
+    /* box-shadow: 1px 2px 3px black, 0 -1px 3px black; */
+    border: 1px solid black;
+    box-shadow: 1px 2px 3px black;
 }
-h1 {
-    margin: 20px 0 0 -2px;
-    padding: 5px 15px;
-    font-size: 28px;
-    color: #B73E3E;
-    font-family: 'Open Sans';
-    border-left: 4px solid #B73E3E;
+@media (max-width: 480px){
+    .container {
+        width: 80%;
+    }
 }
-input {
-    padding: 0 0 6px;
-    margin: 30px auto 0;
+
+
+/* 
+<=== Style untuk logo ===>
+*/
+.logo {
     display: block;
-    width: 70% ;
+    margin: 20px auto;
+    width: 85px;
+}
+@media (max-width: 480px){
+    .logo {
+        margin: 0 auto;
+        width: 60px;
+    }
+}
+
+
+/* 
+<=== Style untuk header text ===>
+*/
+.header-text {
+    margin: 20px auto 40px;
+    width: max-content;
+    
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(50, 50, 50);
+
+    border-bottom: 2px solid #50a0eb;
+}
+@media (max-width: 480px){
+    .header-text {
+        margin: 15px auto 25px;
+        font-size: 24px;
+    }
+}
+
+
+/* 
+<=== Style untuk input username ===>
+*/
+input {
+    display: block;
+    padding-bottom: 6px;
+    margin: 30px auto 0;
+    width: 65%;
+
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(50, 50, 50);
 
     border: none;
-    border-bottom: 2px solid rgb(140, 140, 140);
-    outline: none;
+    border-bottom: 2px solid rgb(160, 160, 160);
 
-    font-family: 'Open Sans';
-    font-size: 18px;
-    color: rgb(30, 30, 30);
-    letter-spacing: 1px;
-
-    transition: 1000ms;
-}
-input::placeholder {
-    letter-spacing: 2px;
-    color: rgb(160, 160, 160);
+    transition: 800ms;
 }
 input:focus {
-    border-bottom: 2px solid #d16d6d;
+    /* border-bottom: 2px solid rgb(93, 231, 93); */
+    border-bottom: 2px solid #50a0eb;
+}
+input::placeholder {
+    color: rgb(160, 160, 160);
 }
 input:focus::placeholder {
     color: transparent;
 }
-button {
+@media (max-width: 480px){
+    input {
+        font-size: 16px;
+        width: 70%;
+    }
+}
+
+
+/* 
+<=== Style untuk input password ===>
+*/
+.password-container{
+    padding-bottom: 6px;
+    margin: auto;
+    width: 65%;
+    position: relative;
+}
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+.fa-eye{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
     cursor: pointer;
+    color: rgb(160, 160, 160);
+}
+@media (max-width: 480px){
+    .password-container {
+        width: 70%;
+    }
+}
+
+
+/* 
+<=== Style untuk tombol login ==>
+*/
+button {
     display: block;
-    padding: 10px 50px;
-    margin: 40px auto 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 20px auto 0;
 
-    outline: none;
-    border: 1px solid #d16d6d;
-    border-radius: 3px;
+
     background: transparent;
-    color: #d16d6d;
+    border-radius: 6px;
+    border: 1px solid #50a0eb;
+    
+    font-size: 18px;
+    font-weight: 300;
+    color: #50a0eb;
+    letter-spacing: 1px;
 
-    transition: 1000ms;
+    transition: 800ms;
 }
-button:hover, button:active, button:focus {
-    color: #833232;
-    border: 1px solid #833232;
-    background: #f5baba;
+button:hover {
+    border: 1px solid #265b8d;
+    color: #265b8d;
+    background: #def0ff;
 }
+@media (max-width: 480px){
+    button {
+        font-size: 16px;
+    }
+}
+
+
+/* 
+<=== Style untuk paragraf ==>
+*/
 p {
-    margin: 50px 0 0;
+    margin: 40px 0 0;
 
-    text-align: center;
     font-size: 14px;
-    font-family: 'Open Sans';
-    color: rgb(70, 70, 70);
+    color: rgb(140, 140, 140);
+    text-align: center;
 }
 a {
-    color: #B73E3E;
+    font-family: 'Open Sans';
+    color: #265b8d;
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
 }
-
 @media (max-width: 480px){
-    form {
-        padding: 10px 0 20px;
-        width: 80%;
-    }
-    h1 {
-        margin: 20px 0 0 -1px;
-        font-size: 22px;
-        border-left: 2px solid #B73E3E;
-    }
-    input {
-        margin: 35px auto 0;
-        width: 85%;
-    
-        font-size: 16px;
-        font-weight: 300 !important;
-    }
-    input::placeholder {
-        letter-spacing: 1px;
-    }
-    button {
-        margin: 35px auto 0;
-    }
     p {
-        margin: 40px 0 0;
         font-size: 12px;
     }
 }
