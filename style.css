@@ -1,1 +1,232 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");body{overflow:hidden;}*{margin-left:0;}body{height:100vh;}[class~=container],*{margin-bottom:0;}*{margin-right:0;}[class~=container]{cursor:default;}*,[class~=container]{padding-left:0;}[class~=container]{padding-bottom:15pt;}*,[class~=container]{padding-right:0;}[class~=container]{padding-top:15pt;}[class~=container]{margin-left:auto;}[class~=container],*{margin-top:0;}[class~=container]{margin-right:auto;}*{padding-bottom:0;}body{display:flex;}body{flex-direction:column;}body{justify-content:center;}*{padding-top:0;}[class~=container]{width:30%;}*{outline:none;}[class~=container]{background:white;}[class~=container]{border-radius:10px;}[class~=container]{box-shadow:.0625pc .75pt 2px #1e1e1e;}body{background:linear-gradient(160deg,rgba(29,29,163,.8) 35%,rgba(17,194,230,.8) 100%);}body{font-family:"Nunito";}@media (max-width: 1000px){[class~=container]{width:40%;}}@media (max-width: 768px){[class~=container]{width:50%;}}@media (max-width: 480px){[class~=container]{width:85%;}}[class~=logo]{display:block;}[class~=logo]{margin-left:auto;}[class~=logo]{margin-bottom:.3125pc;}[class~=logo]{margin-right:auto;}[class~=logo]{margin-top:.3125pc;}[class~=logo]{width:5.3125pc;}@media (max-width: 768px){.logo{width:.78125in;}}@media (max-width: 480px){[class~=logo]{margin-left:auto;}[class~=logo]{margin-bottom:0;}[class~=logo]{margin-right:auto;}[class~=logo]{margin-top:0;}[class~=logo]{width:.677083333in;}}[class~=underln],[class~=header-text],[class~=smkti]{margin-left:auto;}[class~=header-text],[class~=smkti]{margin-bottom:0;}[class~=header-text],[class~=smkti],[class~=underln]{margin-right:auto;}[class~=header-text]{margin-top:20px;}[class~=header-text],[class~=smkti]{width:max-content;}[class~=header-text]{font-size:26px;}[class~=header-text]{font-weight:600;}[class~=header-text]{letter-spacing:1.5pt;}[class~=header-text]{color:#323232;}[class~=smkti]{margin-top:0;}[class~=underln]{margin-bottom:2.5pc;}[class~=underln]{margin-top:.052083333in;}[class~=underln]{width:20%;}[class~=underln]{height:.125pc;}[class~=underln]{background:linear-gradient(to right,#50a0eb,#7ebdf8,#a3d2fd);}@media (max-width: 480px){[class~=header-text]{margin-left:auto;}[class~=header-text]{margin-bottom:0;}[class~=header-text]{margin-right:auto;}[class~=header-text]{margin-top:.15625in;}[class~=header-text]{font-size:.229166667in;}}input:focus,input{border-bottom-width:1.5pt;}input{display:block;}input{padding-bottom:4.5pt;}input{margin-left:auto;}input{margin-bottom:0;}input{margin-right:auto;}input{margin-top:22.5pt;}input{width:65%;}input{font-size:18px;}input{letter-spacing:1px;}input{color:#323232;}input{border-left-width:medium;}input{border-right-width:medium;}input,input:focus{border-bottom-style:solid;}input{border-top-width:medium;}input{border-left-style:none;}input{border-right-style:none;}input{border-top-style:none;}input:focus{border-bottom-color:#50a0eb;}input{border-left-color:currentColor;}input{border-bottom-color:#a0a0a0;}input:focus{border-image:none;}input:focus::placeholder{color:transparent;}input{border-right-color:currentColor;}input{border-top-color:currentColor;}input{border-image:none;}input{transition:800ms;}input::placeholder{color:#a0a0a0;}@media (max-width: 768px){input{width:70%;}}@media (max-width: 480px){input{font-size:.166666667in;}}[class~=password-container]{padding-bottom:6px;}[class~=password-container],.fa-eye{margin-left:auto;}[class~=password-container],.fa-eye{margin-bottom:auto;}.fa-eye,[class~=password-container]{margin-right:auto;}[class~=password-container] input[type="text"],[class~=password-container] input[type="password"]{width:100%;}[class~=password-container],.fa-eye{margin-top:auto;}[class~=password-container]{width:65%;}[class~=password-container]{position:relative;}[class~=password-container] input[type="text"],[class~=password-container] input[type="password"]{box-sizing:border-box;}.fa-eye{position:absolute;}.fa-eye{top:0;}.fa-eye{right:0;}.fa-eye{cursor:pointer;}.fa-eye{color:#a0a0a0;}@media (max-width: 768px){[class~=password-container]{width:70%;}}button{display:block;}button{cursor:pointer;}button{padding-left:.208333333in;}button,button:hover{border-left-width:.010416667in;}button{padding-bottom:.625pc;}button{padding-right:.208333333in;}button{padding-top:.625pc;}button{margin-left:auto;}button{margin-bottom:0;}button,button:hover{border-bottom-width:.010416667in;}button{margin-right:auto;}button{margin-top:.208333333in;}button{background:transparent;}button{border-radius:.0625in;}button:hover,button{border-right-width:.010416667in;}button,button:hover{border-top-width:.010416667in;}button:hover,button{border-left-style:solid;}button:hover,button{border-bottom-style:solid;}button:hover,button{border-right-style:solid;}button:hover,button{border-top-style:solid;}button{border-left-color:#50a0eb;}button{border-bottom-color:#50a0eb;}button:hover{border-left-color:#265b8d;}button{border-right-color:#50a0eb;}button{border-top-color:#50a0eb;}button:hover{border-bottom-color:#265b8d;}button{border-image:none;}button:hover{border-right-color:#265b8d;}button{font-size:13.5pt;}button:hover{border-top-color:#265b8d;}button:hover{border-image:none;}button{font-weight:300;}button{color:#50a0eb;}button:hover{color:#265b8d;}button:hover{background:#def0ff;}button{letter-spacing:.0625pc;}button{transition:800ms;}@media (max-width: 480px){button{font-size:1pc;}}p{margin-left:0;}a:hover{text-decoration:underline;}p{margin-bottom:0;}p{margin-right:0;}p{margin-top:2.8125pc;}p{font-size:.875pc;}p{color:#8c8c8c;}p{text-align:center;}a{font-family:"Open Sans";}a{color:#265b8d;}a{text-decoration:none;}@media (max-width: 480px){p{font-size:9pt;}};
+/* Import font dari google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+/* 
+<=== Style untuk Body dan Container ===>
+*/
+* {
+    margin: 0 0;
+    padding: 0 0;
+    outline: none;
+}
+body {
+    overflow: hidden;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(160deg, rgba(29, 29, 163, 0.8) 35%, rgba(17, 194, 230, 0.8) 100%);
+    /* background: linear-gradient(150deg, rgb(29, 29, 163, 0.8) 35%, rgb(17, 194, 230, 0.8) 100%), url('https://i.pinimg.com/736x/b1/bb/5e/b1bb5e1da5ac6c07b5e01bd9c78af0cc--internet-icon-pattern-background.jpg'); */
+    /* background: linear-gradient(150deg, rgb(29, 29, 163, 0.8) 35%, rgb(17, 194, 230, 0.8) 100%), url('https://t3.ftcdn.net/jpg/03/27/51/56/360_F_327515607_Hcps04aaEc7Ki43d1XZPxwcv0ZaIaorh.jpg'); */
+    font-family: 'Nunito';
+}
+.container {
+    cursor: default;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 30%;
+
+    background: white;
+    border-radius: 10px;
+    /* box-shadow: 1px 2px 5px rgb(40, 40, 40), -1px -1px 5px rgb(40, 40, 40); */
+    /* box-shadow: 1px 2px 3px black, 0 -1px 3px black; */
+    box-shadow: 1px 1px 2px rgb(30, 30, 30);
+}
+@media (max-width: 1000px){
+    .container {
+        width: 40%;
+    }
+}
+@media (max-width: 768px){
+    .container {
+        width: 50%;
+    }
+}
+@media (max-width: 480px){
+    .container {
+        width: 85%;
+    }
+}
+
+
+/* 
+<=== Style untuk logo ===>
+*/
+.logo {
+    display: block;
+    margin: 5px auto;
+    width: 85px;
+}
+@media (max-width: 768px){
+    .logo {
+        width: 75px;
+    }
+}
+@media (max-width: 480px){
+    .logo {
+        margin: 0 auto;
+        width: 65px;
+    }
+}
+
+
+/* 
+<=== Style untuk header text ===>
+*/
+.header-text {
+    margin: 20px auto 0;
+    width: max-content;
+    
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(50, 50, 50);
+}
+.smkti {
+    margin: 0 auto;
+    width: max-content;
+}
+.underln {
+    margin: 5px auto 40px;
+    width: 20%;
+    height: 2px;
+    
+    background: linear-gradient(to right, #50a0eb, #7ebdf8, #a3d2fd);
+}
+@media (max-width: 480px){
+    .header-text {
+        margin: 15px auto 0;
+        font-size: 22px;
+    }
+}
+
+
+/* 
+<=== Style untuk input username ===>
+*/
+input {
+    display: block;
+    padding-bottom: 6px;
+    margin: 30px auto 0;
+    width: 65%;
+
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(50, 50, 50);
+
+    border: none;
+    border-bottom: 2px solid rgb(160, 160, 160);
+
+    transition: 800ms;
+}
+input:focus {
+    /* border-bottom: 2px solid rgb(93, 231, 93); */
+    border-bottom: 2px solid #50a0eb;
+}
+input::placeholder {
+    color: rgb(160, 160, 160);
+}
+input:focus::placeholder {
+    color: transparent;
+}
+@media (max-width: 768px){
+    input {
+        width: 70%;
+    }
+}
+@media (max-width: 480px){
+    input {
+        font-size: 16px;
+    }
+}
+
+
+/* 
+<=== Style untuk input password ===>
+*/
+.password-container{
+    padding-bottom: 6px;
+    margin: auto;
+    width: 65%;
+    position: relative;
+}
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+.fa-eye{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: rgb(160, 160, 160);
+}
+@media (max-width: 768px){
+    .password-container {
+        width: 70%;
+    }
+}
+
+
+/* 
+<=== Style untuk tombol login ==>
+*/
+button {
+    display: block;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+
+
+    background: transparent;
+    border-radius: 6px;
+    border: 1px solid #50a0eb;
+    
+    font-size: 18px;
+    font-weight: 300;
+    color: #50a0eb;
+    letter-spacing: 1px;
+
+    transition: 800ms;
+}
+button:hover {
+    border: 1px solid #265b8d;
+    color: #265b8d;
+    background: #def0ff;
+}
+@media (max-width: 480px){
+    button {
+        font-size: 16px;
+    }
+}
+
+
+/* 
+<=== Style untuk paragraf ==>
+*/
+p {
+    margin: 45px 0 0;
+
+    font-size: 14px;
+    color: rgb(140, 140, 140);
+    text-align: center;
+}
+a {
+    font-family: 'Open Sans';
+    color: #265b8d;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 480px){
+    p {
+        font-size: 12px;
+    }
+}
