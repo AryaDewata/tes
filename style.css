@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+ 
     background: linear-gradient(165deg, rgb(29, 29, 163, 0.8) 35%, rgb(17, 194, 230, 0.7) 100%), url('https://media.istockphoto.com/vectors/vector-internet-pattern-internet-seamless-background-vector-id945181876?k=20&m=945181876&s=170667a&w=0&h=QHvxnf5zv4Kv0PcoNvgLlr6TpqDtkCvqh0h1Bd0sz90=');
     /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('background.jpg') no-repeat; */
     /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('bg2.jpg'); */
@@ -48,7 +48,7 @@ body {
 }
 @media (max-width: 480px){
     body {
-        background: linear-gradient(165deg, rgb(29, 29, 163, 0.7) 35%, rgb(17, 194, 230, 0.6) 100%), url('https://media.istockphoto.com/vectors/vector-internet-pattern-internet-seamless-background-vector-id945181876?k=20&m=945181876&s=170667a&w=0&h=QHvxnf5zv4Kv0PcoNvgLlr6TpqDtkCvqh0h1Bd0sz90=');
+        /* background: linear-gradient(165deg, rgb(29, 29, 163, 0.7) 35%, rgb(17, 194, 230, 0.6) 100%), url('https://media.istockphoto.com/vectors/vector-internet-pattern-internet-seamless-background-vector-id945181876?k=20&m=945181876&s=170667a&w=0&h=QHvxnf5zv4Kv0PcoNvgLlr6TpqDtkCvqh0h1Bd0sz90='); */
     }   
     .container {
         width: 85%;
