@@ -95,7 +95,7 @@ body {
     width: 20%;
     height: 2px;
     
-    background: linear-gradient(to right, #50a0eb, #7ebdf8, #a3d2fd);
+    background: linear-gradient(to right, #a3d2fd, #7ebdf8, #50a0eb, #7ebdf8, #a3d2fd);
 }
 @media (max-width: 480px){
     .header-text {
