@@ -2,22 +2,25 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+    <meta name="author" content="STIBAL DEVELOPER TEAM 2022">
 
-    <!-- Judul Website -->
-    <title>LOGIN PAGE LAYOUT</title>
+    <!-- Website's Title -->
+    <title>SMKTI Hotspot</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-    <!-- Website Icon -->
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-
+    <!-- Website's Icon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/office/2x/wifi-logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -25,34 +28,38 @@
     <!-- Container -->
     <div class="container">
 
-        <!-- Logo SMKTI -->
-        <img class="logo" src="logo.png" alt="logo smkti">
+        <!-- Header Logo -->
+        <img class="logo" src="logo.png" alt="logo smkti" title="Logo SMKTI Bali Global Singaraja">
 
         <!-- Header Text -->
         <h1 class="header-text">LOGIN</h1>
+        <p class="smkti">SMK TI Bali Global Singaraja</p>
+        <div class="underln"></div>
 
-        <form>
+        <!-- Input Username -->
+        <input type="text" name="username" placeholder="Username" title="Ketik username disini" autocomplete="off"
+            autocapitalize="off" autofocus required>
 
-            <!-- Input Username -->
-            <input type="text" placeholder="Username" autofocus required>
+        <!-- Input Password -->
+        <div class="password-container">
+            <input type="password" name="password" placeholder="Password" title="Ketik password disini" id="password"
+                required>
+            <i class="fa-solid fa-eye" id="eye" title="Klik untuk menampilkan sandi"></i>
+        </div>
 
-            <!-- Input Password -->
-            <div class="password-container">
-                <input type="password" placeholder="Password" id="password" required>
-                <i class="fa-solid fa-eye" id="eye" title="Klik untuk menampilkan sandi"></i>
-            </div>
+        <!-- Tombol Login -->
+        <button type="submit" class="login-button" title="Klik untuk login" value="LOGIN">LOGIN</button>
 
-            <!-- Tombol Login -->
-            <button class="login-button" title="Klik untuk login">LOGIN</button>
-
-        </form>
-
-        <!-- Copyright -->
-        <p>Powered by <a href="https://instagram.com/stibal_developer">STIBAL DEVELOPER</a></p>
+        <!-- Footer Description -->
+        <p>Supported by <a href="https://instagram.com/stibal_developer"
+                title="Klik untuk mengunjungi instagram kami">STIBAL
+                DEVELOPER</a></p>
     </div>
 
     <!-- Javascript -->
     <script>
+        document.oncontextmenu = function () { return false; }
+
         const passwordField = document.querySelector("#password");
         const eyeIcon = document.querySelector("#eye");
         eye.addEventListener("click", function () {
@@ -62,6 +69,7 @@
             eyeIcon.setAttribute('title', type === 'password' ? 'Klik untuk menampilkan sandi' : 'Klik untuk menyembunyikan sandi');
         })
     </script>
+
 </body>
 
 </html>
