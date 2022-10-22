@@ -18,40 +18,35 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
- 
-    background: linear-gradient(165deg, rgb(29, 29, 163, 0.8) 35%, rgb(17, 194, 230, 0.7) 100%), url('https://media.istockphoto.com/vectors/vector-internet-pattern-internet-seamless-background-vector-id945181876?k=20&m=945181876&s=170667a&w=0&h=QHvxnf5zv4Kv0PcoNvgLlr6TpqDtkCvqh0h1Bd0sz90=');
-    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('background.jpg') no-repeat; */
-    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('bg2.jpg'); */
-    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('bg1.jpg'); */
-    /* background-size: cover; */
+
+    /* background: linear-gradient(160deg, rgba(29, 29, 163, 0.8) 35%, rgba(17, 194, 230, 0.8) 100%); */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/background.jpg');
+    background-size: cover;
     font-family: 'Nunito';
 }
 .container {
     cursor: default;
     padding: 20px 0;
     margin: 0 auto;
-    width: 30%;
+    width: 27%;
 
     background: white;
     border-radius: 10px;
-    box-shadow: 2px 3px 5px black;
+    box-shadow: 3px 4px 5px black;
 }
 @media (max-width: 1100px){
     .container {
-        width: 40%;
+        width: 37%;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 800px){
     .container {
-        width: 60%;
+        width: 50%;
     }
 }
 @media (max-width: 480px){
-    body {
-        /* background: linear-gradient(165deg, rgb(29, 29, 163, 0.7) 35%, rgb(17, 194, 230, 0.6) 100%), url('https://media.istockphoto.com/vectors/vector-internet-pattern-internet-seamless-background-vector-id945181876?k=20&m=945181876&s=170667a&w=0&h=QHvxnf5zv4Kv0PcoNvgLlr6TpqDtkCvqh0h1Bd0sz90='); */
-    }   
     .container {
-        width: 85%;
+        width: 80%;
     }
 }
 
@@ -99,6 +94,7 @@ body {
     height: 2px;
     
     background: linear-gradient(to right, #a3d2fd, #7ebdf8, #50a0eb, #7ebdf8, #a3d2fd);
+    border-radius: 50%;
 }
 @media (max-width: 480px){
     .header-text {
@@ -127,6 +123,7 @@ input {
     transition: 800ms;
 }
 input:focus {
+    /* border-bottom: 2px solid rgb(93, 231, 93); */
     border-bottom: 2px solid #50a0eb;
 }
 input::placeholder {
@@ -187,7 +184,7 @@ button {
 
 
     background: transparent;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 1px solid #50a0eb;
     
     font-size: 18px;
