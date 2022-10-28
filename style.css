@@ -1,231 +1,194 @@
-/* Import font dari google font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 /* 
-<=== Style untuk Body dan Container ===>
+<======>
+<========= Body =========>
+<======>
 */
-* {
-    margin: 0 0;
-    padding: 0 0;
-    outline: none;
-}
 body {
-    overflow: hidden;
-
-    height: 100vh;
+    font-family: 'Nunito';
+    overflow-x: hidden;
+}
+.vertical-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    /* background: linear-gradient(160deg, rgba(29, 29, 163, 0.8) 35%, rgba(17, 194, 230, 0.8) 100%); */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/background.jpg');
-    background-size: cover;
-    font-family: 'Nunito';
 }
+
+/* 
+<======>
+<========= Container =========>
+<======>
+*/
 .container {
-    cursor: default;
-    padding: 20px 0;
-    margin: 0 auto;
-    width: 27%;
-
-    background: white;
-    border-radius: 10px;
-    box-shadow: 3px 4px 5px black;
+    /* padding: 0 0 200px; */
+    /* box-shadow: 1px 0 3px black; */
+    overflow-x: hidden;
 }
-@media (max-width: 1100px){
-    .container {
-        width: 37%;
-    }
-}
-@media (max-width: 800px){
-    .container {
-        width: 50%;
-    }
-}
-@media (max-width: 480px){
-    .container {
-        width: 80%;
-    }
-}
-
 
 /* 
-<=== Style untuk logo ===>
+<======>
+<========= Navigation =========>
+<======>
 */
-.logo {
-    display: block;
-    margin: 5px auto;
-    width: 85px;
-}
-@media (max-width: 768px){
-    .logo {
-        width: 75px;
-    }
-}
-@media (max-width: 480px){
-    .logo {
-        margin: 0 auto;
-        width: 65px;
-    }
-}
-
-
-/* 
-<=== Style untuk header text ===>
-*/
-.header-text {
-    margin: 20px auto 0;
-    width: max-content;
-    
-    font-size: 26px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: rgb(50, 50, 50);
-}
-.smkti {
-    margin: 0 auto;
-    width: max-content;
-}
-.underln {
-    margin: 5px auto 40px;
-    width: 20%;
-    height: 2px;
-    
-    background: linear-gradient(to right, #a3d2fd, #7ebdf8, #50a0eb, #7ebdf8, #a3d2fd);
-    border-radius: 50%;
-}
-@media (max-width: 480px){
-    .header-text {
-        margin: 15px auto 0;
-        font-size: 22px;
-    }
-}
-
-
-/* 
-<=== Style untuk input username ===>
-*/
-input {
-    display: block;
-    padding-bottom: 6px;
-    margin: 30px auto 0;
-    width: 65%;
-
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: rgb(50, 50, 50);
-
-    border: none;
-    border-bottom: 2px solid rgb(160, 160, 160);
-
-    transition: 800ms;
-}
-input:focus {
-    /* border-bottom: 2px solid rgb(93, 231, 93); */
-    border-bottom: 2px solid #50a0eb;
-}
-input::placeholder {
-    color: rgb(160, 160, 160);
-}
-input:focus::placeholder {
-    color: transparent;
-}
-@media (max-width: 768px){
-    input {
-        width: 70%;
-    }
-}
-@media (max-width: 480px){
-    input {
-        font-size: 16px;
-    }
-}
-
-
-/* 
-<=== Style untuk input password ===>
-*/
-.password-container{
-    padding-bottom: 6px;
-    margin: auto;
-    width: 65%;
-    position: relative;
-}
-.password-container input[type="password"],
-.password-container input[type="text"] {
+nav {
+    position: fixed;
+    padding: 6px 0;
+    display: flex;
     width: 100%;
-    box-sizing: border-box;
-}
-.fa-eye{
-    margin: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    color: rgb(160, 160, 160);
-}
-@media (max-width: 768px){
-    .password-container {
-        width: 70%;
-    }
-}
-
-
-/* 
-<=== Style untuk tombol login ==>
-*/
-button {
-    display: block;
-    cursor: pointer;
-    padding: 10px 20px;
-    margin: 20px auto 0;
-
-
-    background: transparent;
-    border-radius: 6px;
-    border: 1px solid #50a0eb;
-    
-    font-size: 18px;
-    font-weight: 300;
-    color: #50a0eb;
-    letter-spacing: 1px;
-
+    font-weight: 600;
+    color: white;
+    /* color: rgb(60, 60, 60); */
+    box-shadow: 1px 0 3px rgb(70, 70, 70);
     transition: 800ms;
 }
-button:hover {
-    border: 1px solid #265b8d;
-    color: #265b8d;
-    background: #def0ff;
+.nav-title, .menu-list {
+    padding: 0 20px;
+    width: 50%;
+    
+    display: flex;
+    gap: 10px;
 }
-@media (max-width: 480px){
-    button {
-        font-size: 16px;
+
+/* Nav title */
+.nav-title img {
+    height: 35px;
+}
+.nav-title h1 {
+    font-size: 20px;    
+}
+.nav-btn {
+    display: none;
+}
+
+/* Nav menu */
+.menu-list {
+    gap: 20px;
+    justify-content: right;
+}
+.menu-list li a {
+    color: white;
+    /* color: rgb(70, 70, 70);   */
+    text-decoration: none;
+    transition: 400ms;
+}
+.menu-list li a:hover {
+    color: rgb(100, 100, 255);
+}
+
+/* Btn Link */
+.btn-link {
+    padding: 6px 14px;
+    color: rgb(100, 100, 255) !important;
+    border-radius: 10px;
+    border: 2px solid rgb(100, 100, 255);
+}
+.btn-link:hover {
+    color: white !important;
+    background: rgb(100, 100, 255);
+}
+
+@media (max-width: 768px){
+    .nav-title, .menu-list {
+        gap: 8px;
+    }
+    
+    /* Nav title */
+    .nav-title h1 {
+        font-size: 18px;    
+    }
+    
+    /* Nav menu */
+    .menu-list {
+        gap: 12px;
+    }
+    
+    /* Btn Link */
+    .btn-link {
+        padding: 4px 12px;
     }
 }
 
+@media (max-width: 480px){
+    nav {
+        flex-direction: column;
+    }
+    .nav-title, .menu-list {
+        padding: 0 10px;
+        width: 100%;
+    }
+    
+    /* Nav title */
+    .nav-title h1 {
+        font-size: 18px;    
+    }
+    .nav-title {
+        position: relative;
+    }
+    .nav-btn {
+        display: block;
+        aspect-ratio: 1 / 1;
+        height: 70%;
+
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nav-btn span {
+        width: 100%;
+        height: 18%;
+        background: rgb(120, 120, 255);
+        border-radius: 10px;
+    }
+
+    /* Nav menu */
+    .menu-list {
+        top: 0;
+        padding: 30px 0;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+
+        position: fixed;
+        transform: translateY(-100%);
+        opacity: 0%; 
+
+        background: rgb(255, 255, 255, 0.5);
+        backdrop-filter: blur(4px);
+        box-shadow: 1px 0 3px rgb(70, 70, 70);
+        transition: 800ms;
+    }
+    .active {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+    
+    /* Btn Link */
+    .menu-list a, .btn-link {
+        margin: 0 auto;
+        width: max-content;
+    }
+}
 
 /* 
-<=== Style untuk paragraf ==>
+<======>
+<========= Header Section =========>
+<======>
 */
-p {
-    margin: 45px 0 0;
+#header {
+    padding: 350px;
 
-    font-size: 14px;
-    color: rgb(140, 140, 140);
-    text-align: center;
-}
-a {
-    font-family: 'Open Sans';
-    color: #265b8d;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-@media (max-width: 480px){
-    p {
-        font-size: 12px;
-    }
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ppdb.smktibaliglobalsingaraja.sch.id/template/fe/img/main.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgb(60, 60, 60);
 }
