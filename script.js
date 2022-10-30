@@ -1,4 +1,6 @@
 const nav = document.querySelector('nav');
+const title = document.querySelector('nav a');
+
 const navButton = document.querySelector('.nav-btn');
 const menu = document.querySelector('.menu-list');
 const menuLink = document.querySelectorAll('.menu-list li a');
@@ -11,13 +13,13 @@ menu.addEventListener('click', () => {
 })
 
 window.addEventListener("scroll", () => {
-    if (document.documentElement.scrollTop > 10) {
+    if (document.documentElement.scrollTop > 30) {
         nav.style.background = 'white';
-        nav.style.color = 'rgb(60, 60, 60)';
+        title.style.color = 'rgb(60, 60, 60)';
         menuLink.forEach(e => e.style.color = 'rgb(60, 60, 60)');
     } else {
         nav.style.background = 'transparent';
-        nav.style.color = 'white';
+        title.style.color = 'white';
         menuLink.forEach(e => e.style.color = 'white');
     }
 });
